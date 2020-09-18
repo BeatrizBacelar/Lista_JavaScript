@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+       body{
+           background: rgb(67, 146, 211);
+           color: white;
+           font: normal 18pt arial;
+       } 
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p> 
+    <div id='msg'>Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // atribuindo o paragrafo 1 (posição 0) por marca utilizando o comando getElements...]
+        /*var d = window.document.getElementById('msg') // selecionando a div pelo id dela
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+ 
+  //  window.document.write('Esta escrito assim: '+p1.innerText) // esta pegando o texto do paragrafo atraves do comando innerText
+ // p1.style.color = 'blue' // mudando a cor de fonte do paragrafo 1 [0]
+//  corpo.style.background = 'black'
+
+
+    </script>
+</body>
+</html>
